@@ -1,0 +1,16 @@
+MEU VEÍCULO — V5.1 RC1
+
+RELATÓRIO GERENCIAL PROFISSIONAL
+
+- Novo relatório A4 para impressão/salvamento em PDF.
+- Resumo executivo com custos, receitas, distância, custo/km e custo/dia.
+- Consumo separado por combustível e avaliado apenas contra o histórico do próprio veículo.
+- Classificação da confiabilidade conforme quantidade de abastecimentos válidos.
+- Não mistura etanol e gasolina em uma média única de km/L.
+- Análise financeira por grupo.
+- Nova seção Valor total por subcategoria, com quantidade, participação e última ocorrência.
+- Ranking das 10 maiores despesas.
+- Diagnóstico histórico com ressalva de que não representa diagnóstico mecânico.
+- Rodapé com aplicativo, versão, desenvolvedor e data de emissão.
+
+Versão: 5.1 RC1

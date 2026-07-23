@@ -1,0 +1,15 @@
+MEU VEÍCULO 5.0 RC1 — REVISÃO VISUAL E DE LEGIBILIDADE
+
+ALTERAÇÕES:
+- Correção de contraste nos Últimos movimentos.
+- Subcategoria, valor e hodômetro com cores legíveis.
+- Identificações de Meus veículos corrigidas.
+- Valores dos Relatórios corrigidos, incluindo custo bruto, custo líquido, receitas e distância.
+- Integração visual do novo ícone vermelho com a interface azul-escura.
+- Vermelho aplicado em ações principais, navegação ativa, bordas e destaques.
+- Tema claro e escuro revisados.
+- Cache do service worker atualizado para v5.0 RC2.
+
+SEGURANÇA:
+- Nenhuma alteração em cloud.js, firebase-config.js, firestore.rules ou datasets.
+- Nenhuma alteração nas chaves do localStorage ou em users/{uid}/app/state.

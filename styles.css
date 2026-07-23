@@ -1,0 +1,290 @@
+:root{--navy:#12395b;--blue:#246b9e;--sky:#eaf4fb;--green:#1f8a70;--ink:#17324d;--muted:#6c7d8d;--line:#dbe5ec;--bg:#f4f7f9}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px system-ui,-apple-system,Segoe UI,sans-serif}header{height:74px;background:var(--navy);color:#fff;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:4}header h1{font-size:21px;margin:0}header small{opacity:.7}header button{background:#ffffff18;color:#fff;border:0;border-radius:50%;font-size:20px;width:42px;height:42px}main{max-width:800px;margin:auto;padding:18px 16px 96px}.page{display:none}.page.active{display:block}.vehicle{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;justify-content:space-between;gap:12px}.vehicle div{display:flex;flex-direction:column}.vehicle span{background:var(--sky);align-self:center;padding:8px;border-radius:9px;font-weight:700}.hero{margin-top:14px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border-radius:18px;padding:22px}.hero b{font-size:31px;display:block;margin:4px 0}.hero span{opacity:.75}.metrics,.report-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}.metrics article,.report-grid article,.chart-card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:14px}.metrics b,.report-grid b{display:block;font-size:19px;margin-top:5px}.primary{width:100%;background:var(--green);color:#fff;border:0;border-radius:13px;padding:15px;font-weight:750;font-size:16px}.section-title,.page-title{display:flex;align-items:center;justify-content:space-between;margin:22px 0 10px}.section-title h2,.page-title h2{margin:0}.section-title button{border:0;background:none;color:var(--blue);font-weight:700}.list{display:flex;flex-direction:column;gap:9px}.item,.register-row{background:#fff;border:1px solid var(--line);border-radius:13px;padding:13px;display:flex;justify-content:space-between;gap:10px;align-items:center}.item small,.muted,.register-row small{color:var(--muted);display:block}.amount{text-align:right}.income .amount{color:var(--green)}nav{position:fixed;bottom:0;left:0;right:0;height:74px;background:#fff;border-top:1px solid var(--line);display:flex;justify-content:center;z-index:5;padding-bottom:env(safe-area-inset-bottom)}nav button{width:min(25%,200px);background:none;border:0;color:var(--muted);font-weight:650;font-size:12px}nav button span{display:block;font-size:22px;margin-bottom:2px}nav button.active{color:var(--blue)}.round{border:0;background:var(--green);color:#fff;width:44px;height:44px;border-radius:50%;font-size:22px}.filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}.filters.one{grid-template-columns:1fr}.filters select,.full-input,label input,label select,label textarea{width:100%;border:1px solid var(--line);background:#fff;border-radius:10px;padding:12px;font:inherit}.full-input{margin-bottom:8px}.bars{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:20px}.bar{margin:10px 0}.bar div:first-child{display:flex;justify-content:space-between;margin-bottom:5px}.track{height:9px;background:#e8eef2;border-radius:6px;overflow:hidden}.fill{height:100%;background:var(--blue);border-radius:6px}.export{background:var(--navy);color:#fff;border-radius:16px;padding:18px}.export button{background:#fff;color:var(--navy);border:0;border-radius:9px;padding:11px;font-weight:700}.register-row button{border:0;border-radius:8px;padding:8px 10px;margin-left:5px;background:var(--sky);color:var(--blue);font-weight:700}.register-row button.danger{background:#fdeaea;color:#a32929}dialog{border:0;border-radius:18px;width:min(92vw,520px);padding:0}dialog::backdrop{background:#0c223780}dialog form{padding:18px}.dialog-head{display:flex;justify-content:space-between}.dialog-head button{border:0;background:none;font-size:25px}label{display:block;margin:12px 0;font-weight:650}label input,label select,label textarea{margin-top:5px}label textarea{min-height:70px}.odo-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.odo-grid input[readonly]{background:#eef3f6}.field-help{color:var(--muted)}.form-error{color:#a32929;font-weight:700}.chart-card{margin:12px 0}.chart-card canvas{width:100%;height:260px;display:block}@media(max-width:560px){.filters,.odo-grid{grid-template-columns:1fr}.hero b{font-size:27px}.chart-card canvas{height:230px}}
+
+.vehicle-auto{background:#eef5fa;border:1px solid #c9dce9;border-radius:12px;padding:12px;margin-bottom:12px}.vehicle-auto small{display:block;color:#5b7083;margin-bottom:4px}.vehicle-auto strong{color:#12395b}
+.vehicle-cards{display:grid;gap:10px}.vehicle-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;grid-template-columns:1fr auto;gap:4px 12px}.vehicle-card.default{border-left:5px solid var(--green)}.vehicle-card div{display:flex;flex-direction:column}.vehicle-card strong{align-self:center}.vehicle-card span{grid-column:1/-1;color:var(--muted);font-size:13px}
+
+.app-version{display:inline-block;margin-top:3px;font-size:.75rem;opacity:.8}.about-card{background:#fff;border-radius:18px;padding:22px;box-shadow:0 8px 24px rgba(18,57,91,.08)}.about-card h3{margin-top:0}.about-card a{color:#12395b;word-break:break-word}.status-active{color:#1f8a70;font-weight:700}.status-inactive{color:#a64b2a;font-weight:700}.vehicle-card.inactive{opacity:.7;border-style:dashed}nav button{min-width:0}
+
+.edit-movement{margin-top:6px;padding:5px 10px;border:1px solid #b8c7d4;border-radius:8px;background:#fff;color:#12395b;font-size:.78rem;font-weight:700;cursor:pointer}.edit-movement:hover{background:#eef5fa}
+
+.movement-actions{display:flex;gap:6px;justify-content:flex-end;margin-top:7px}.movement-actions button{border:0;border-radius:8px;padding:7px 10px;font-weight:700;cursor:pointer}.edit-movement{background:var(--sky);color:var(--blue)}.delete-movement{background:#fdeaea;color:#a32929}@media(max-width:420px){.movement-actions{flex-direction:column}}
+
+.developer-photo{display:block;width:min(100%,420px);height:auto;margin:0 auto 20px;border-radius:16px;box-shadow:0 8px 24px rgba(18,57,91,.14)}
+
+/* Relatório de custos por categoria — v3.14 */
+.category-table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #dbe5ee;border-radius:14px;background:#fff}
+.category-cost-table{width:100%;min-width:620px;border-collapse:collapse;font-size:.88rem}
+.category-cost-table th,.category-cost-table td{padding:12px 10px;border-bottom:1px solid #e7eef4;text-align:right;white-space:nowrap}
+.category-cost-table thead th{background:#f3f7fa;color:#44627a;font-size:.76rem;text-transform:uppercase;letter-spacing:.03em}
+.category-cost-table th:first-child,.category-cost-table td:first-child{text-align:left}
+.category-cost-table tbody th{color:#17324d}
+.category-cost-table .total-expenses th,.category-cost-table .total-expenses td{background:#e8f2f9;color:#155b88;font-weight:800;border-top:2px solid #6ea5c8}
+.category-cost-table .income-row th,.category-cost-table .income-row td{color:#1f7a5b;font-weight:700}
+.category-cost-table .net-cost-row th,.category-cost-table .net-cost-row td{background:#eaf7f1;color:#176b50;font-weight:900;border-top:2px solid #70b89d;border-bottom:0}
+@media(max-width:520px){.category-cost-table{font-size:.8rem}.category-cost-table th,.category-cost-table td{padding:10px 8px}.category-table-wrap{margin-bottom:4px}}
+
+/* Gráficos legíveis — v3.14 */
+.chart-card{overflow:hidden}.chart-card canvas{min-height:280px}.metrics{align-items:stretch}@media(max-width:560px){.chart-card canvas{min-height:300px}}
+
+/* Interface profissional escura — v4.5 */
+:root{--navy:#061b2d;--blue:#1687e8;--sky:#0d2a42;--green:#17a673;--ink:#eef6ff;--muted:#9bb0c3;--line:#1b405e;--bg:#041421;--card:#08243a;--card-2:#0b2b45;--danger:#e53935}
+html{background:var(--bg)}
+body{background:radial-gradient(circle at top,#0b2a43 0,#041421 42%,#03101b 100%);color:var(--ink);min-height:100vh}
+header{height:78px;background:linear-gradient(180deg,#06213a,#071b2c);border-bottom:1px solid #174462;box-shadow:0 8px 24px #0005}
+header h1{font-weight:800;letter-spacing:-.02em}header small{color:#b7cad9}.app-version{font-size:11px;color:#75bfff}
+main{max-width:860px}
+.vehicle,.metrics article,.report-grid article,.chart-card,.item,.register-row,.bars,.about-card,.vehicle-card{background:linear-gradient(145deg,var(--card-2),var(--card));border:1px solid var(--line);box-shadow:0 10px 28px #0003}
+.vehicle span{background:#0b3553;color:#d8ecff}.hero{background:linear-gradient(135deg,#0b4f7e,#087cc9);box-shadow:0 14px 32px #0005;border:1px solid #2f91d0}.hero b{letter-spacing:-.03em}
+.metrics,.report-grid{gap:12px}.metrics article,.report-grid article{min-height:92px;padding:16px}.metrics small,.report-grid small{color:#a9bfd1}.metrics b,.report-grid b{font-size:20px}
+.primary{background:linear-gradient(180deg,#1687e8,#0866c3);box-shadow:0 8px 20px #006bc755;border:1px solid #41a5ff}.primary:active{transform:translateY(1px)}
+.section-title h2,.page-title h2{font-size:22px}.section-title button{color:#59adf3}
+.filters select,.full-input,label input,label select,label textarea{background:#0a2940;border-color:#28506c;color:#f3f8fc;outline:none}.filters select:focus,.full-input:focus,label input:focus,label select:focus,label textarea:focus{border-color:#2c9bf0;box-shadow:0 0 0 3px #1687e82c}
+.item small,.muted,.register-row small,.field-help{color:var(--muted)}
+nav{background:#061b2df2;border-top:1px solid #204966;backdrop-filter:blur(14px);box-shadow:0 -8px 24px #0005}nav button{color:#8299ac}nav button.active{color:#38a6ff}nav button span{font-size:21px}
+.round{background:#1488e5;box-shadow:0 8px 18px #1687e84d}
+.export{background:linear-gradient(135deg,#092b47,#0d4168);border:1px solid #23618c}.export button{background:#edf7ff;color:#073154}
+.register-row button{background:#123d5d;color:#69b9f8}.register-row button.danger{background:#4a2026;color:#ff9fa6}
+dialog{background:#071f33;color:var(--ink);border:1px solid #28506c;box-shadow:0 24px 80px #000a}dialog::backdrop{background:#010b13cc}.odo-grid input[readonly]{background:#10283a;color:#aac0d0}.dialog-head button{color:#fff}
+.chart-card{padding:18px 16px 12px}.chart-card h3{margin:0 0 8px;font-size:18px}.chart-card canvas{background:linear-gradient(180deg,#0a294000,#061b2d80);border-radius:10px}
+.about-card{text-align:center;padding:24px}.developer-photo{width:96px!important;height:96px!important;max-width:96px!important;object-fit:cover;border-radius:50%;border:3px solid #2e98e8;box-shadow:0 8px 22px #0007;margin:0 auto 12px;display:block}.about-card a{color:#55b2ff}
+@media(max-width:560px){main{padding:14px 12px 94px}.metrics,.report-grid{grid-template-columns:1fr 1fr;gap:9px}.metrics article,.report-grid article{min-height:86px;padding:13px}.metrics b,.report-grid b{font-size:17px}.hero{padding:19px}.chart-card{padding:15px 10px}.developer-photo{width:82px!important;height:82px!important;max-width:82px!important}}
+.chart-note{margin:-2px 0 8px;color:var(--muted);font-size:12px}.chart-legend{display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center;margin-top:10px}.chart-legend span{display:flex;align-items:center;gap:6px;color:#d8e9f6;font-size:12px}.chart-legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
+
+/* Correções de contraste e enquadramento — v4.6 */
+.category-table-wrap{background:#071f33;border-color:#28506c;box-shadow:0 10px 28px #0003}
+.category-cost-table{background:#071f33;color:#eef6ff}
+.category-cost-table th,.category-cost-table td{color:#eef6ff;border-bottom-color:#24445d}
+.category-cost-table thead th{background:#0d304b;color:#c4d9e9}
+.category-cost-table tbody th{color:#f4f9ff}
+.category-cost-table tbody tr:not(.total-expenses):not(.income-row):not(.net-cost-row){background:#08243a}
+.category-cost-table tbody tr:not(.total-expenses):not(.income-row):not(.net-cost-row):nth-child(even){background:#0a2940}
+.category-cost-table .total-expenses th,.category-cost-table .total-expenses td{background:#0d3b5d;color:#ffffff;border-top-color:#2f95d5}
+.category-cost-table .income-row th,.category-cost-table .income-row td{background:#082d2a;color:#57db9c}
+.category-cost-table .net-cost-row th,.category-cost-table .net-cost-row td{background:#0a3a32;color:#7be3ad;border-top-color:#36a875}
+.about-card{overflow:hidden}
+.developer-photo{box-sizing:border-box;aspect-ratio:1/1;overflow:hidden;object-position:center center;flex:0 0 auto}
+
+/* Filtros, menu e ajuda — v4.7 */
+.header-menu-wrap{position:relative}.header-menu{position:absolute;right:0;top:50px;width:175px;padding:7px;background:#08243a;border:1px solid #28506c;border-radius:13px;box-shadow:0 18px 38px #0009}.header-menu[hidden]{display:none}.header-menu button{display:block;width:100%;height:auto;padding:11px 12px;border-radius:9px;text-align:left;font-size:14px;background:transparent;color:#eef6ff}.header-menu button:hover{background:#103a59}
+.period-filter{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:end;margin:0 0 8px;padding:12px;background:linear-gradient(145deg,#0b2b45,#08243a);border:1px solid #1b405e;border-radius:13px}.period-filter small{display:block;margin:0 0 5px;color:#9bb0c3;font-weight:700}.period-filter input{width:100%;min-height:43px;padding:10px;border:1px solid #28506c;border-radius:9px;background:#0a2940;color:#f3f8fc;font:inherit;color-scheme:dark}.period-filter button{min-height:43px;padding:10px 13px;border:1px solid #39759f;border-radius:9px;background:#103b5b;color:#dcefff;font-weight:750}.period-error{min-height:18px;margin:2px 0 7px;color:#ff9fa6;font-weight:700}.period-label{margin:3px 0 12px;color:#b7cad9;font-weight:700}.empty-state{padding:24px;margin:12px 0;text-align:center;color:#b7cad9;background:#08243a;border:1px dashed #39759f;border-radius:14px}
+.help-card{background:linear-gradient(145deg,#0b2b45,#08243a);border:1px solid #1b405e;border-radius:16px;padding:18px;box-shadow:0 10px 28px #0003}.help-card h3{margin-top:0}.help-card details{border-top:1px solid #24445d;padding:11px 2px}.help-card summary{cursor:pointer;color:#eef6ff;font-weight:800}.help-card p{margin:9px 0 2px;color:#b7cad9;line-height:1.55}
+@media(max-width:600px){.period-filter{grid-template-columns:1fr 1fr}.period-filter button{grid-column:1/-1}.header-menu{right:-4px}}
+
+
+/* Instalação PWA — v4.11 */
+.secondary{width:100%;background:#103b5b;color:#eaf6ff;border:1px solid #39759f;border-radius:11px;padding:12px;font-weight:800}.secondary:active{transform:translateY(1px)}.install-app-action[hidden]{display:none!important}
+
+
+/* Meu Veículo 5.0 — Material 3, temas e animações */
+:root{--md-primary:#e31825;--md-surface:#ffffff;--md-on-surface:#17324d;--md-outline:#dbe5ec}
+html[data-theme="light"] body{background:#f4f7f9;color:#17324d}
+html[data-theme="dark"]{--md-surface:#0b2539;--md-on-surface:#eef6ff;--md-outline:#24445d}
+html[data-theme="dark"] body{background:#061827;color:#eef6ff}
+html[data-theme="dark"] .vehicle,html[data-theme="dark"] .metrics article,html[data-theme="dark"] .report-grid article,html[data-theme="dark"] .chart-card,html[data-theme="dark"] .item,html[data-theme="dark"] .register-row,html[data-theme="dark"] .bars,html[data-theme="dark"] nav,html[data-theme="dark"] .help-card,html[data-theme="dark"] .about-card{background:#0b2539;color:#eef6ff;border-color:#24445d}
+html[data-theme="dark"] input,html[data-theme="dark"] select,html[data-theme="dark"] textarea{background:#102f46;color:#fff;border-color:#31556e}
+.page.active{animation:pageIn .24s ease-out}.metrics article,.report-grid article,.chart-card,.item,.vehicle-card{transition:transform .18s ease,box-shadow .18s ease}.metrics article:active,.item:active,.vehicle-card:active{transform:scale(.985)}
+@keyframes pageIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+.splash-screen{position:fixed;inset:0;z-index:9999;background:linear-gradient(160deg,#061827,#0b2d47);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;transition:opacity .35s ease,visibility .35s ease}.splash-screen.hidden{opacity:0;visibility:hidden}.splash-screen img{width:124px;height:124px;border-radius:28px;box-shadow:0 18px 46px #0008}.splash-screen h1{margin:20px 0 4px;font-size:30px}.splash-screen p{margin:0;opacity:.72}.splash-screen span{width:46px;height:4px;background:#ffffff2e;border-radius:4px;margin-top:28px;overflow:hidden}.splash-screen span:after{content:"";display:block;width:55%;height:100%;background:#e31825;animation:load 1s infinite ease-in-out}@keyframes load{from{transform:translateX(-110%)}to{transform:translateX(190%)}}
+.smart-insights{margin:12px 0}.smart-insights article{background:linear-gradient(135deg,#102f46,#0b2539);color:#fff;border:1px solid #31556e;border-radius:16px;padding:15px}.smart-insights strong,.smart-insights span{display:block}.smart-insights span{margin-top:7px;color:#d8e9f6;font-size:.9rem}
+header{border-bottom-color:#e31825}nav button.active{color:#e31825}.primary,.round{background:#e31825}.export button{margin:4px 5px 4px 0}.app-version{background:#e31825!important}
+@media(max-width:560px){nav button{font-size:10px;padding:0 2px}nav button span{font-size:20px}.chart-card canvas{height:270px}}
+
+/* Meu Veículo 5.0 RC1 — revisão oficial de contraste e identidade */
+:root{
+  --navy:#071827;
+  --navy-2:#0a2237;
+  --card:#0b2941;
+  --card-2:#0d314d;
+  --red:#e31b23;
+  --red-dark:#b9131a;
+  --white:#ffffff;
+  --text:#f7fbff;
+  --muted:#c0d0dc;
+  --line:#28506c;
+  --green:#36c88a;
+  --yellow:#f6c945;
+  --blue:#3ba8ff;
+}
+body{color:var(--text)}
+header{background:linear-gradient(180deg,#091d2e,#071827);border-bottom:3px solid var(--red)}
+header h1,header small{color:#fff}
+.hero{background:linear-gradient(135deg,#17324a,#0c446a);border:1px solid #416b89;box-shadow:inset 5px 0 0 var(--red),0 14px 32px #0005}
+.primary,.round{background:linear-gradient(180deg,var(--red),var(--red-dark));border-color:#ff5b61;box-shadow:0 8px 20px #e31b234f}
+nav button.active{color:#ff4a51}
+nav button.active span{filter:drop-shadow(0 0 7px #e31b2388)}
+.section-title button,.header-menu button:hover{color:#fff}
+
+/* Cartões e textos: nenhum valor deve ficar invisível */
+.vehicle,.metrics article,.report-grid article,.chart-card,.item,.register-row,.bars,.about-card,.vehicle-card,.help-card,.smart-insights article{
+  background:linear-gradient(145deg,var(--card-2),var(--card));
+  border-color:var(--line);
+  color:var(--text);
+}
+.vehicle *,
+.vehicle-card *,
+.item *,
+.register-row *,
+.report-grid *,
+.metrics *,
+.category-cost-table *{text-shadow:none}
+.vehicle strong,.vehicle b,.vehicle-card b,.vehicle-card strong,.vehicle-card span,
+.item b,.item .amount b,.register-row b,.report-grid b,.metrics b,
+#recentList .item b,#recentList .amount b,#movementList .item b,#movementList .amount b{
+  color:#fff!important;
+  opacity:1!important;
+}
+.vehicle small,.vehicle-card small,.item small,.register-row small,
+#recentList .item small,#movementList .item small,.metrics small,.report-grid small{
+  color:var(--muted)!important;
+  opacity:1!important;
+}
+.vehicle-card span{color:#d6e4ee!important}
+.vehicle-card.default{border-left:5px solid var(--red);box-shadow:inset 4px 0 0 #ff6268,0 10px 28px #0003}
+.vehicle span{background:#143d5b;color:#fff}
+
+/* Últimos movimentos */
+#recentList .item,#movementList .item{border-left:4px solid #37637f}
+#recentList .item.income,#movementList .item.income{border-left-color:var(--green)}
+#recentList .amount,#movementList .amount{color:#fff!important}
+#recentList .income .amount b,#movementList .income .amount b{color:#63e2a9!important}
+
+/* Relatórios */
+.report-grid article{min-height:100px;display:flex;flex-direction:column;justify-content:center}
+.report-grid b{font-size:21px;font-weight:900;letter-spacing:.01em}
+#incomeTotal{color:#63e2a9!important}
+#grossTotal,#reportNet,#reportDistance{color:#fff!important}
+.bar div:first-child,.bar div:first-child span,.bar div:first-child b{color:#fff!important}
+.track{background:#173b56}.fill{background:linear-gradient(90deg,var(--red),#ff646a)}
+
+/* Tabelas de relatório */
+.category-cost-table,.category-cost-table tbody th,.category-cost-table td{color:#fff!important}
+.category-cost-table thead th{color:#d7e5ef!important}
+.category-cost-table .income-row th,.category-cost-table .income-row td{color:#63e2a9!important}
+.category-cost-table .total-expenses th,.category-cost-table .total-expenses td,
+.category-cost-table .net-cost-row th,.category-cost-table .net-cost-row td{color:#fff!important}
+
+/* Tema claro também legível */
+html[data-theme="light"] body{background:#eef3f7;color:#152c3f}
+html[data-theme="light"] .vehicle,
+html[data-theme="light"] .metrics article,
+html[data-theme="light"] .report-grid article,
+html[data-theme="light"] .chart-card,
+html[data-theme="light"] .item,
+html[data-theme="light"] .register-row,
+html[data-theme="light"] .bars,
+html[data-theme="light"] .about-card,
+html[data-theme="light"] .vehicle-card,
+html[data-theme="light"] .help-card{background:#fff;color:#152c3f;border-color:#cbd8e1}
+html[data-theme="light"] .vehicle strong,html[data-theme="light"] .vehicle b,
+html[data-theme="light"] .vehicle-card b,html[data-theme="light"] .vehicle-card strong,
+html[data-theme="light"] .item b,html[data-theme="light"] .item .amount b,
+html[data-theme="light"] .register-row b,html[data-theme="light"] .report-grid b,
+html[data-theme="light"] .metrics b{color:#152c3f!important}
+html[data-theme="light"] .vehicle-card span,html[data-theme="light"] .vehicle-card small,
+html[data-theme="light"] .item small,html[data-theme="light"] .register-row small,
+html[data-theme="light"] .metrics small,html[data-theme="light"] .report-grid small{color:#5c7080!important}
+html[data-theme="light"] #incomeTotal,html[data-theme="light"] .income .amount b{color:#137b50!important}
+html[data-theme="light"] .category-cost-table,html[data-theme="light"] .category-cost-table tbody th,
+html[data-theme="light"] .category-cost-table td{color:#17324d!important}
+
+/* foco e acessibilidade */
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #ff7479;outline-offset:2px}
+@media(max-width:420px){.report-grid b{font-size:18px}.vehicle-card{grid-template-columns:1fr}.vehicle-card strong{justify-self:start}.vehicle-card span{grid-column:1}}
+
+/* Meu Veículo 5.0 RC2 — correção integral de contraste no tema claro */
+html[data-theme="light"] #recentList .item b,
+html[data-theme="light"] #recentList .amount b,
+html[data-theme="light"] #movementList .item b,
+html[data-theme="light"] #movementList .amount b{
+  color:#17324d!important;
+  opacity:1!important;
+}
+html[data-theme="light"] #recentList .item small,
+html[data-theme="light"] #movementList .item small{
+  color:#5c7080!important;
+  opacity:1!important;
+}
+html[data-theme="light"] #recentList .income .amount b,
+html[data-theme="light"] #movementList .income .amount b{
+  color:#137b50!important;
+}
+html[data-theme="light"] .help-card h3,
+html[data-theme="light"] .help-card summary{
+  color:#17324d!important;
+  opacity:1!important;
+}
+html[data-theme="light"] .help-card p{
+  color:#40596d!important;
+  opacity:1!important;
+}
+html[data-theme="light"] .help-card details{border-top-color:#8da5b7}
+html[data-theme="light"] .category-table-wrap,
+html[data-theme="light"] .category-cost-table{
+  background:#fff!important;
+  border-color:#b9c9d5!important;
+}
+html[data-theme="light"] .category-cost-table thead th{
+  background:#12395b!important;
+  color:#fff!important;
+}
+html[data-theme="light"] .category-cost-table tbody tr:not(.total-expenses):not(.income-row):not(.net-cost-row),
+html[data-theme="light"] .category-cost-table tbody tr:not(.total-expenses):not(.income-row):not(.net-cost-row):nth-child(even){
+  background:#fff!important;
+}
+html[data-theme="light"] .category-cost-table tbody th,
+html[data-theme="light"] .category-cost-table tbody td{
+  color:#17324d!important;
+  opacity:1!important;
+  border-bottom-color:#c9d6df!important;
+}
+html[data-theme="light"] .category-cost-table .total-expenses th,
+html[data-theme="light"] .category-cost-table .total-expenses td{
+  background:#dcecf7!important;
+  color:#12395b!important;
+}
+html[data-theme="light"] .category-cost-table .income-row th,
+html[data-theme="light"] .category-cost-table .income-row td{
+  background:#e4f5ec!important;
+  color:#137b50!important;
+}
+html[data-theme="light"] .category-cost-table .net-cost-row th,
+html[data-theme="light"] .category-cost-table .net-cost-row td{
+  background:#ccebdd!important;
+  color:#0d5d3e!important;
+}
+html[data-theme="light"] .bar div:first-child,
+html[data-theme="light"] .bar div:first-child span,
+html[data-theme="light"] .bar div:first-child b{
+  color:#17324d!important;
+  opacity:1!important;
+}
+html[data-theme="light"] .chart-note,
+html[data-theme="light"] .chart-legend span,
+html[data-theme="light"] .period-label,
+html[data-theme="light"] .period-filter small{
+  color:#40596d!important;
+}
+html[data-theme="light"] .vehicle-card span{color:#40596d!important}
+html[data-theme="light"] #grossTotal,
+html[data-theme="light"] #reportNet,
+html[data-theme="light"] #reportDistance{color:#17324d!important}
+
+/* V5.0 RC3 — gráficos responsivos e valores sob demanda */
+.chart-tooltip {
+  position: fixed;
+  z-index: 99999;
+  min-width: 120px;
+  max-width: 240px;
+  padding: 9px 11px;
+  border-radius: 10px;
+  background: rgba(8, 31, 49, .96);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,.28);
+  pointer-events: none;
+  font: 12px/1.35 system-ui, sans-serif;
+}
+.chart-tooltip b,
+.chart-tooltip span { display: block; }
+.chart-tooltip span { margin-top: 3px; font-size: 13px; font-weight: 800; }
+
+.chart-section-title{margin:22px 0 10px;padding:9px 12px;border-left:4px solid var(--primary,#246b9e);background:var(--surface-soft,#eef5f9);border-radius:6px;color:var(--text,#17324d)}

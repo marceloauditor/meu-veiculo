@@ -1,0 +1,19 @@
+MEU VEÍCULO — ATUALIZAÇÃO V4.11
+
+Objetivo: reforçar a instalação do sistema como aplicativo PWA no celular.
+
+Alterações:
+- versão interna corrigida de 4.8 para 4.11;
+- manifesto ampliado para Android/iOS;
+- botão de instalação exibido quando permitido pelo navegador;
+- atalhos para Novo lançamento e Relatórios;
+- service worker atualizado para cache v4.11 e navegação offline;
+- metadados de aplicativo adicionados ao index.html;
+- instrução de instalação atualizada na Ajuda.
+
+Preservação confirmada:
+- firebase-config.js não alterado;
+- cloud.js não alterado;
+- firestore.rules não alterado;
+- datasets CSV/XLSX não alterados;
+- nenhuma mudança na estrutura de dados ou no caminho users/{uid}/app/state.

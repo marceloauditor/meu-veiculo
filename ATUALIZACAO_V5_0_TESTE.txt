@@ -1,0 +1,16 @@
+MEU VEÍCULO 5.0 — VERSÃO DE TESTE
+
+Alterações:
+- novo ícone fornecido pelo usuário;
+- splash screen;
+- navegação inferior com cinco opções;
+- temas claro, escuro e automático;
+- animações suaves;
+- indicadores inteligentes básicos;
+- relatório imprimível/salvável em PDF;
+- gráfico Gastos mensais com rótulos de anos;
+- gráfico Custo anual com maior área para valores verticais;
+- cache PWA atualizado.
+
+Não foram alterados cloud.js, firebase-config.js, firestore.rules ou datasets.
+APK/AAB e Google Drive exigem etapa Android/API externa posterior.

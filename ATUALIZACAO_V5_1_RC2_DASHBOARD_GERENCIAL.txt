@@ -1,0 +1,15 @@
+MEU VEÍCULO — V5.1 RC2
+
+DASHBOARD GERENCIAL E GRÁFICOS NO PDF
+
+- Gráficos reorganizados em desempenho, evolução financeira e composição dos custos.
+- Consumo médio consolidado por semestre, sem numeração no eixo Y.
+- Evolução da quilometragem com escala de 5.000 km iniciada no primeiro hodômetro.
+- Evolução do custo anual com custo bruto, receitas e custo líquido.
+- Custo médio geral diário por ano.
+- Títulos padronizados por categoria, quilômetro e dia.
+- Custo total por categoria.
+- Top 10 subcategorias por valor.
+- Todos os gráficos incluídos na exportação do relatório em PDF.
+
+Observação: a reestruturação do dataset será tratada em etapa posterior.

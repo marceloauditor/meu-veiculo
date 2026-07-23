@@ -1,0 +1,14 @@
+MEU VEÍCULO — V5.0 RC2
+
+Correção integral de contraste e legibilidade das interfaces.
+
+Principais ajustes:
+- Subcategoria e valor dos últimos movimentos agora permanecem visíveis no tema claro.
+- Textos, títulos e itens expansíveis do menu Ajuda receberam contraste adequado.
+- Tabela Custos por categoria recebeu fundo, cabeçalho, células e totalizadores próprios para o tema claro.
+- Custo bruto, custo líquido, distância, receitas e demais valores dos relatórios foram revisados.
+- Rótulos das barras, filtros, legendas e observações dos gráficos foram corrigidos.
+- Cores internas dos gráficos agora se adaptam automaticamente ao tema claro ou escuro.
+- Cache do service worker atualizado para v500-rc2.
+
+Não houve alteração no Firebase, no caminho users/{uid}/app/state, nas chaves do localStorage nem na estrutura dos dados.

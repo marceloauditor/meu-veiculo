@@ -1,0 +1,11 @@
+MEU VEÍCULO — V5.0 RC3
+
+ALTERAÇÕES:
+- Até 12 meses: gráficos temporais exibem meses no eixo X.
+- Acima de 12 meses: dados temporais são agrupados e exibidos por ano.
+- Valores fixos sobre barras e pontos só aparecem quando existe espaço suficiente.
+- Em celular ou gráficos densos, os valores ficam disponíveis por toque.
+- Em computador, os valores completos aparecem ao passar o mouse.
+- Valores monetários podem aparecer abreviados no gráfico e completos no balão.
+- Hodômetro é agrupado pelo último/maior registro do mês ou do ano.
+- Mantidos Firebase, Firestore, chaves de armazenamento e estrutura dos dados.
